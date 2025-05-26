@@ -1,0 +1,40 @@
+@media (min-width: 1025px) {
+    main {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    #data {
+        width: 30%;
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+    #weather {
+        width: 30%;
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+    #weather img {
+        display: none;
+    }
+
+    #weather-icon::after {
+        content: "⛅";
+    }
+}

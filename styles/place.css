@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #008000;
+    /* Green */
+    --secondary-color: #000000;
+    /* Black */
+    --background-color: #ffffff;
+    /* White */
+    --h2-background: #004d00;
+    /* Dark Green */
+    --text-color: #000000;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header,
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+#data,
+#weather {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+    margin-top: 1rem;
+    background-color: rgba(0, 128, 0, 0.1);
+}
+
+h2 {
+    background-color: var(--h2-background);
+    color: var(--background-color);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+#weather img {
+    display: block;
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+}
+
+p {
+    display: block;
+    text-align: center;
+}
+
+span {
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+}
+
+.field {
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    font-weight: bold;
+}
+
+#currentyear,
+#lastModified {
+    margin: 0;
+}
+
+footer {
+    margin-top: 1rem;
+}
