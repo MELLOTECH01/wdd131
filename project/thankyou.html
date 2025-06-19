@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You</title>
+    <link rel="stylesheet" href="css/contact-mobile.css" media="screen and (max-width: 768px)" />
+    <link rel="stylesheet" href="css/contact-desktop.css" media="screen and (min-width: 769px)" />
+</head>
+
+<body>
+    <header>
+        <h1>Prime Deals Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Thank You for Your Inquiry!</h2>
+        <p>We have received your message and will respond shortly.</p>
+        <p>You have submitted <span id="count"></span> inquiries.</p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Prime Deals Hub</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+        document.getElementById("count").textContent = localStorage.getItem("inquiryCount") || 1;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime Deals Hub - Listings</title>
+    <link rel="stylesheet" href="styles/listings.css" media="screen and (max-width: 768px)" />
+    <link rel="stylesheet" href="styles/listings-large.css" media="screen and (min-width: 769px)" />
+</head>
+
+<body>
+    <header>
+        <h1>Prime Deals Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Available Listings</h2>
+        <div id="filters">
+            <button data-type="all">All</button>
+            <button data-type="real-estate">Real Estate</button>
+            <button data-type="cars">Cars</button>
+        </div>
+        <div id="listings-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Prime Deals Hub</p>
+    </footer>
+
+    <script src="scripts/listings.js"></script>
+</body>
+
+</html>
